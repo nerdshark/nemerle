@@ -61,13 +61,274 @@
     <Folder Include="typing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompilationOptions.n">
+    <Compile Include="codedom\NemerleCodeCompiler.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="codedom\NemerleCodeGenerator.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="codedom\NemerleCodeProvider.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="codedom\NemerleMemberAttributeConverter.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="completion\CodeCompletionEngine.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\Codec.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\ExternalMemberInfo\ExternalEventInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\ExternalMemberInfo\ExternalFieldInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\ExternalMemberInfo\ExternalMemberInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\ExternalMemberInfo\ExternalMethodInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\ExternalMemberInfo\ExternalPropertyInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\ExternalType.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\ExternalTypeInfo\ExternalNemerleTypeInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\ExternalTypeInfo\ExternalPrimitiveTypeInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\ExternalTypeInfo\ExternalTypeInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\InternalTypes.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\LibraryReference.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\LibraryReferenceManager.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="external\NumericKind.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generation\DecisionTreeCompiler.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generation\HierarchyEmitter.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generation\ILEmitter.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generation\ImplementsWrapperMaker.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generation\Typer3.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generation\Typer4.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\BuiltinMethod.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\ClassMembers.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\CustomAttribute.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\DelegateClassGen.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\GlobalEnv.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\MacroClassGen.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\NamespaceTree.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\ScanTypeHierarchy.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\TypeBuilder.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\TypeInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\TypesManager.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hierarchy\XmlDump.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="misc\ComponentsFactory.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="misc\ExprWalker.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="misc\PrettyPrint.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="misc\Stats.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="misc\TopDeclPrint.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="optimization\CFG.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="optimization\CFGArray.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="optimization\Decorator.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="optimization\Optimizer.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="optimization\Preparer.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="optimization\Propagator.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="optimization\Unification.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="optimization\UseSet.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\AST.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\Lexer.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\MainParser-Extensions.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\MainParser.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\Parser.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\ParseTree.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\PreParser.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\PreParserIndent.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\PreprocessorEvaluator.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\Source.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parsing\Utility.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\ConstantFolder.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\DecisionTreeBuilder.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\ErrorMessage.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\FixedType.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\LocalContext.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\LocalValue.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\MacroColorizer.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\MacroRegistry.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Macros.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Messenger.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\OverloadPossibility.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\RestartInErrorMode.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Solver.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\StaticTypeVar.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Subst.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\TraverseExpr2.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\TypedTree.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Typer-CallTyper.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Typer-DelayedTyping.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Typer-OverloadSelection.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Typer-PatternTyper.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Typer.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\Typer2.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\TypeVar.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="typing\TypeVarEnv.n">
+      <SubType>Code</SubType>
+    </Compile>
+    <!--<Compile Include="CompilationOptions.n">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="passes.n">
       <SubType>Code</SubType>
     </Compile>
-    <!-- Fixme: If move next line done in the file we take TypeLosrExcepton("Located")! -->
+    <! Fixme: If move next line done in the file we take TypeLosrExcepton("Located")! >
     <Compile Include="parsing\*.n">
       <SubType>Code</SubType>
     </Compile>
@@ -103,16 +364,7 @@
     </Compile>
     <Compile Include="typing\*.n">
       <SubType>Code</SubType>
-    </Compile>
-    <Content Include="testsuite\negative\*.n">
-      <SubType>None</SubType>
-    </Content>
-    <Content Include="testsuite\positive\*.n">
-      <SubType>None</SubType>
-    </Content>
-    <Content Include="testsuite\todo\*.n">
-      <SubType>None</SubType>
-    </Content>
+    </Compile>-->
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
